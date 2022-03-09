@@ -2,19 +2,31 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+  return ( 
+    <View style={style.continer}>
+      <Text style={style.text}>Hi</Text>
+      <StatusBar style="light" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
+// const styles ={ //여기에 쓰면 자동완서 잘 안된대
+//   containter:{ 
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+// };
+const style = StyleSheet.create({ //여기에 쓰면 자동완성 잘 된대 - StyleSheet.create
+  continer:{
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+  text:{
+    fontSize: 28,
+    color: "black"
+  }
+})
