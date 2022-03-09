@@ -8,7 +8,8 @@ export default function App() {
     //   <View style={{flex:6,backgroundColor:"teal"}}></View>
     //   <View style={{flex:1,backgroundColor:"orange"}}></View>
     // </View>
-    <View style={{flex:1, flexDirection:"row"}}> //가로
+    // 가로
+    <View style={{flex:1, flexDirection:"row"}}> 
     <View style={{flex:1,backgroundColor:"tomato"}}></View>
     <View style={{flex:6,backgroundColor:"teal"}}></View>
     <View style={{flex:1,backgroundColor:"orange"}}></View>
