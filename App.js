@@ -19,7 +19,7 @@ export default function App() {
     const {coords: { latitude, longitude }} = await Location.getCurrentPositionAsync({ accuracy: 5 });
     const location = await Location.reverseGeocodeAsync({ latitude, longitude },{ useGoogleMaps: false });
     console.log(location)
-    setCity(location[0].city);
+    setCity(location[0].district);
   };
   useEffect(() => {
     ask();
